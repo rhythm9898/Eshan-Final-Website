@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>userlogin</title>
+    <style>
+        @import "bourbon";
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+        @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+        $shadow-color: #23203b;
+        $input-color: lighten(#AB9E95, 10%);
+        $input-border-color: #5E5165;
+        $button-background-color: #27AE60;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            background: url() fixed;
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            background: "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX22243987.jpg";
+        }
+        
+        body,
+        input,
+        button {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        @mixin normalize-input {
+            display: block;
+            width: auto;
+            height: auto;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            background: "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX22243987.jpg";
+            border-radius: 0px;
+        }
+        
+        .login {
+            padding: 15px;
+            width: 400px;
+            min-height: 400px;
+            margin: 2% auto 0 auto;
+            .heading {
+                text-align: center;
+                margin-top: 1%;
+                h2 {
+                    font-size: 3em;
+                    font-weight: 300;
+                    color: seagreen;
+                    display: inline-block;
+                    padding-bottom: 5px;
+                    text-shadow: 1px 1px 3px $shadow-color;
+                }
+            }
+            form {
+                .input-group {
+                    background: midnightblue;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    &:last-of-type {
+                        border-top: none;
+                    }
+                    span {
+                        min-width: 53px;
+                        background: midnightblue;
+                        border: none;
+                        i {
+                            font-size: 1.5em;
+                            color: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                }
+                input.form-control {
+                    @include normalize-input;
+                    padding: 10px;
+                    font-size: 1.6em;
+                    width: 100%;
+                    color: $input-color;
+                    &:focus {
+                        border: none;
+                    }
+                }
+                /*  button {
+                    margin-top: 20px;
+                    background: red;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 5px 0;
+                    width: 100%;
+                    border-radius: 3px;
+                    color: lighten($button-background-color, 40%);
+                    border-bottom: 4px solid darken($button-background-color, 10%);
+                    &:hover {
+                        background: tint($button-background-color, 4%);
+                        -webkit-animation: hop 1s;
+                        animation: hop 1s;
+                    }
+            }*/
+            }
+        }
+        
+        .float {
+            display: inline-block;
+            margin-left: 150px;
+            transform: translateZ(10);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        }
+        
+        .float:hover,
+        .float:focus,
+        .float:active {
+            -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+        }
+        /*.im {
+            margin-left: 300px;
+            width: ;
+            height: 300px;
+        }*/
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 250px;
+            alt: "logo";
+        }
+        
+        .si {
+            width: 400px;
+            margin-left: -17px;
+            padding: 0.7rem 0;
+            font-size: 200%;
+            text-align: center;
+            border: none;
+            text-decoration: none;
+            background-color: yellow;
+        }
+        
+        .si:hover {
+            cursor: pointer;
+            box-shadow: 0 0.6rem 0.6rem 0;
+            transition: transform 3ms;
+        }
+    </style>
+</head>
+
+<body background="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX22243987.jpg" style="height:100%;  background-size: contain; background-position: center; background-repeat: no-repeat; background-size: cover">
+
+    <div class="im">
+        <img src="C:\Users\HP\Documents\dsw-project\e-tantrik-logo.jpeg" class="center">
+        <br></div>
+
+
+    <div class="login">
+        <div class="heading">
+
+
+            <h2 style="color:yellow; margin-left:90px; font-size: 70px; font-weight: 800;">Login</h2>
+
+            <form action="#">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="email" class="field form-control" placeholder="username or email"><br><br>
+                </div>
+
+
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <input type="password" class="field pswd form-control" placeholder="password"><br><br>
+                </div>
+                <br><br>
+
+
+
+                <button type="submit" class="si">Sign In</button>
+
+            </form>
+
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+<footer style="background:#001b3a; color:lightgrey;">
+    <blockquote>Copyright: @e-tantrik.pvt ltd.<br> Email-Id:etantrikcomsabmilega.gmail.com
+        <br> Contact:
+        <Contact:> +91-9818682310</Contact:>
+        <br> or call toll free at
+        <contact>0124-7629812</contact>
+
+
+
+    </blockquote>
+
+</footer>
+
+
+</html>
